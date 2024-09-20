@@ -32,7 +32,7 @@ const PostInput = () => {
         <div className="flex flex-col items-center bg-white shadow-md rounded-lg mx-auto p-4">
           {/* Icône du haut */}
           <div className="flex justify-center mb-4">
-            <span className="text-3xl font-bold">𑁍</span>{" "}
+            <span className="text-3xl font-bold text-black">𑁍</span>{" "}
             {/* Remplacez par votre icône spécifique */}
           </div>
 
@@ -48,7 +48,7 @@ const PostInput = () => {
                 className="border border-orange-400 rounded-full"
               />
             </div>
-            <p>Minato.ai</p>
+            <p className='text-black'>Minato.ai</p>
           </div>
 
           {/* Zone d'entrée */}
@@ -58,7 +58,7 @@ const PostInput = () => {
                 placeholder="What's new?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full border-b-2 border-gray-200 focus:outline-none focus:border-gray-400 pr-10" // pr-10 for padding right
+                className="w-full border-b-2 border-gray-200 focus:outline-none focus:border-gray-400 pr-10 text-black" // pr-10 for padding right
             />
             <div 
                 className='absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer' 
