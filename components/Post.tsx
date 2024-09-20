@@ -28,9 +28,9 @@ const Post = ({ author, content, image, profileImage }: PostProps) => {
           />
         )}
         {/* Informations sur l'auteur */}
-        <span className="font-bold mt-2">{author}</span>
+        <span className="font-bold mt-2 text-black">{author}</span>
       </div>
-      <p>{content}</p>
+      <p className='text-black'>{content}</p>
       {image && <img src={image} alt="Post image" className="w-full mt-4 rounded-lg" />}
       <PostItem content="Hello world!" initialReactions={{ likes: 0, smile: 0, heart: 0 }} />
     </motion.div>
